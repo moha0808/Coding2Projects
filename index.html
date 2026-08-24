@@ -1,0 +1,974 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding2Projects | Pre-Final & Final Year Engineering, MCA & M.Tech Projects</title>
+  <meta name="description" content="Coding2Projects - Technology made simple. Providing 100% original, plagiarism-free Pre-Final & Final Year Projects for BE, B.Tech, M.E, M.Tech & MCA students. Web, Mobile, AI/ML, Full Stack & IoT.">
+  
+  <!-- Google Fonts & Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#061229',
+              navy: '#0A1B3A',
+              card: '#0F2347',
+              blue: '#0B63E5',
+              electric: '#0066FF',
+              sky: '#38BDF8',
+              cyan: '#06B6D4'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- FontAwesome Icons & Lucide Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body class="bg-[#061229] text-slate-100 antialiased bg-grid-pattern selection:bg-blue-500 selection:text-white">
+
+  <!-- TOP BAR CONTACT ANNOUNCEMENT -->
+  <div class="bg-gradient-to-r from-blue-900/90 via-blue-600/90 to-cyan-700/90 text-white text-xs sm:text-sm py-2 px-4 border-b border-blue-400/20 backdrop-blur-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+      <div class="flex items-center gap-2 font-medium">
+        <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-semibold bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">
+          <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse mr-1.5"></span>
+          Accepting 2026 Batch Projects
+        </span>
+        <span class="hidden md:inline text-blue-200">| Complete Engineering, MCA & M.Tech Project Solutions</span>
+      </div>
+      <div class="flex items-center gap-4 text-xs font-semibold">
+        <a href="https://wa.me/917397730585?text=Hi%20Coding2Projects,%20I%20am%20looking%20for%20a%20project!" target="_blank" class="hover:text-emerald-300 transition flex items-center gap-1.5">
+          <i class="fab fa-whatsapp text-emerald-400 text-sm"></i> WhatsApp: 7397730585
+        </a>
+        <a href="mailto:code2projects100@gmail.com" class="hidden sm:flex hover:text-sky-300 transition items-center gap-1.5">
+          <i class="far fa-envelope text-sky-400"></i> code2projects100@gmail.com
+        </a>
+        <a href="https://www.instagram.com/coding2projects?utm_source=qr&igsi=MXczMTlpaTlndG1jOA==" target="_blank" class="hover:text-pink-300 transition flex items-center gap-1">
+          <i class="fab fa-instagram text-pink-400"></i> Instagram
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION HEADER -->
+  <header class="bg-[#061229]/90 backdrop-blur-lg border-b border-slate-800/80 sticky top-[33px] sm:top-[37px] z-40">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3.5 flex justify-between items-center">
+      <!-- LOGO & BRANDING -->
+      <a href="#home" class="flex items-center gap-3 group">
+        <div class="relative w-11 h-11 rounded-xl bg-slate-900 border border-blue-500/30 p-1 flex items-center justify-center overflow-hidden shadow-lg shadow-blue-500/10 group-hover:border-blue-400 transition">
+          <img src="./assets/images/logo.jpg" alt="Coding2Projects Logo" class="w-full h-full object-contain">
+        </div>
+        <div>
+          <div class="text-xl font-extrabold tracking-tight flex items-center">
+            <span class="text-white">Coding</span>
+            <span class="text-blue-500">2</span>
+            <span class="text-white">Projects</span>
+          </div>
+          <p class="text-[11px] text-sky-400 font-medium tracking-wide">Technology made simple</p>
+        </div>
+      </a>
+
+      <!-- DESKTOP NAV LINKS -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-semibold text-slate-300">
+        <a href="#home" class="hover:text-sky-400 transition">Home</a>
+        <a href="#degrees" class="hover:text-sky-400 transition">Degrees</a>
+        <a href="#domains" class="hover:text-sky-400 transition">Project Domains</a>
+        <a href="#pillars" class="hover:text-sky-400 transition">Why Us</a>
+        <a href="#calculator" class="hover:text-sky-400 transition">Package Estimator</a>
+        <a href="#faq" class="hover:text-sky-400 transition">FAQ</a>
+        <a href="#poster" class="hover:text-sky-400 transition">Brand Poster</a>
+      </nav>
+
+      <!-- ACTION BUTTONS -->
+      <div class="hidden sm:flex items-center gap-3">
+        <a href="https://wa.me/917397730585?text=Hi%20Coding2Projects,%20I'm%20interested%20in%20a%20project%20solution." target="_blank" 
+           class="px-4 py-2 rounded-xl text-xs font-bold bg-emerald-600 hover:bg-emerald-500 text-white flex items-center gap-2 shadow-lg shadow-emerald-600/20 transition transform hover:-translate-y-0.5">
+          <i class="fab fa-whatsapp text-sm"></i>
+          <span>7397730585</span>
+        </a>
+        <a href="https://www.instagram.com/coding2projects?utm_source=qr&igsi=MXczMTlpaTlndG1jOA==" target="_blank" 
+           class="p-2 rounded-xl bg-slate-800 border border-slate-700 hover:border-pink-500/50 hover:bg-pink-900/20 text-pink-400 transition">
+          <i class="fab fa-instagram text-lg"></i>
+        </a>
+      </div>
+
+      <!-- MOBILE HAMBURGER BUTTON -->
+      <button id="mobile-menu-btn" class="lg:hidden p-2 rounded-lg bg-slate-800 border border-slate-700 text-slate-200 hover:text-white focus:outline-none">
+        <i class="fas fa-bars text-lg"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div id="mobile-menu" class="fixed inset-0 bg-slate-950/90 backdrop-blur-xl z-50 hidden flex-col justify-between p-6">
+    <div>
+      <div class="flex justify-between items-center border-b border-slate-800 pb-4 mb-6">
+        <div class="flex items-center gap-3">
+          <img src="./assets/images/logo.jpg" alt="Logo" class="w-9 h-9 rounded-lg border border-blue-500/30 object-contain">
+          <div>
+            <div class="text-lg font-bold text-white">Coding<span class="text-blue-500">2</span>Projects</div>
+            <p class="text-xs text-sky-400">Technology made simple</p>
+          </div>
+        </div>
+        <button id="mobile-menu-close" class="p-2 rounded-lg bg-slate-800 text-slate-300 hover:text-white">
+          <i class="fas fa-times text-xl"></i>
+        </button>
+      </div>
+
+      <nav class="flex flex-col gap-4 text-base font-semibold text-slate-200">
+        <a href="#home" class="py-2 border-b border-slate-800/50 hover:text-sky-400">Home</a>
+        <a href="#degrees" class="py-2 border-b border-slate-800/50 hover:text-sky-400">Supported Degrees</a>
+        <a href="#domains" class="py-2 border-b border-slate-800/50 hover:text-sky-400">Project Domains</a>
+        <a href="#pillars" class="py-2 border-b border-slate-800/50 hover:text-sky-400">4 Pillars of Quality</a>
+        <a href="#calculator" class="py-2 border-b border-slate-800/50 hover:text-sky-400">Package Estimator</a>
+        <a href="#faq" class="py-2 border-b border-slate-800/50 hover:text-sky-400">FAQ</a>
+        <a href="#poster" class="py-2 hover:text-sky-400">Brand Poster</a>
+      </nav>
+    </div>
+
+    <div class="space-y-3 pt-6 border-t border-slate-800">
+      <a href="https://wa.me/917397730585?text=Hi%20Coding2Projects,%20I%20want%20to%20discuss%20my%20project." target="_blank" 
+         class="w-full py-3 rounded-xl font-bold bg-emerald-600 hover:bg-emerald-500 text-white flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30">
+        <i class="fab fa-whatsapp text-lg"></i>
+        <span>WhatsApp: 7397730585</span>
+      </a>
+      <a href="mailto:code2projects100@gmail.com" class="w-full py-2.5 rounded-xl font-semibold bg-slate-800 border border-slate-700 text-slate-300 flex items-center justify-center gap-2">
+        <i class="far fa-envelope"></i> code2projects100@gmail.com
+      </a>
+    </div>
+  </div>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden bg-dot-pattern">
+    <!-- Glow Elements -->
+    <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-blue-600/15 blur-[120px] rounded-full pointer-events-none"></div>
+    <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-cyan-500/10 blur-[100px] rounded-full pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- HERO LEFT TEXT CONTENT -->
+        <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+          
+          <!-- BRAND BADGE -->
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/80 border border-blue-500/30 text-sky-300 text-xs sm:text-sm font-semibold shadow-inner">
+            <span class="flex h-2 w-2 relative">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-sky-500"></span>
+            </span>
+            <span>A new look. A stronger vision. 🎓</span>
+          </div>
+
+          <!-- MAIN HEADLINE -->
+          <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-[1.15]">
+            Pre-Final & Final Year <br>
+            <span class="text-gradient-brand">PROJECT SOLUTIONS</span>
+          </h1>
+
+          <!-- MOTTO & SUBTITLE -->
+          <p class="text-lg sm:text-xl text-slate-300 max-w-2xl font-normal leading-relaxed mx-auto lg:mx-0">
+            Welcome to <strong class="text-white font-bold">Coding2Projects</strong> — <em class="text-sky-400 not-italic font-semibold">Technology made simple.</em> 💻✨
+          </p>
+
+          <p class="text-base text-slate-400 font-medium">
+            Helping engineering and computer application students build innovative, high-impact academic projects with full guidance.
+          </p>
+
+          <!-- TARGET DEGREE PILLS -->
+          <div class="pt-2 flex flex-wrap justify-center lg:justify-start items-center gap-2 text-xs sm:text-sm font-bold">
+            <span class="px-3 py-1.5 rounded-lg bg-blue-900/50 border border-blue-500/40 text-blue-200">BE / B.Tech</span>
+            <span class="px-3 py-1.5 rounded-lg bg-blue-900/50 border border-blue-500/40 text-blue-200">M.E / M.Tech</span>
+            <span class="px-3 py-1.5 rounded-lg bg-blue-900/50 border border-blue-500/40 text-blue-200">MCA</span>
+          </div>
+
+          <!-- CALL TO ACTIONS -->
+          <div class="pt-4 flex flex-col sm:flex-row justify-center lg:justify-start items-center gap-4">
+            <a href="https://wa.me/917397730585?text=Hi%20Coding2Projects,%20I'm%20looking%20for%20a%20project%20solution." target="_blank" 
+               class="w-full sm:w-auto px-7 py-4 rounded-xl font-bold bg-emerald-600 hover:bg-emerald-500 text-white text-base flex items-center justify-center gap-3 shadow-xl shadow-emerald-600/30 transition transform hover:-translate-y-0.5">
+              <i class="fab fa-whatsapp text-2xl"></i>
+              <span>WhatsApp Us: 7397730585</span>
+            </a>
+            <a href="#calculator" 
+               class="w-full sm:w-auto px-6 py-4 rounded-xl font-semibold bg-slate-800/90 hover:bg-slate-700 text-slate-200 border border-slate-700 hover:border-slate-500 text-base flex items-center justify-center gap-2 transition">
+              <i class="fas fa-calculator text-sky-400"></i>
+              <span>Package Estimator</span>
+            </a>
+          </div>
+
+          <!-- TRUST BADGES FOOTER -->
+          <div class="pt-6 border-t border-slate-800/80 grid grid-cols-2 sm:grid-cols-4 gap-3 text-left">
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-300">
+              <i class="fas fa-shield-alt text-emerald-400 text-base"></i>
+              <span>100% Original Work</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-300">
+              <i class="fas fa-tag text-yellow-400 text-base"></i>
+              <span>Affordable Pricing</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-300">
+              <i class="fas fa-check-double text-blue-400 text-base"></i>
+              <span>Plagiarism Free</span>
+            </div>
+            <div class="flex items-center gap-2 text-xs font-semibold text-slate-300">
+              <i class="fas fa-user-lock text-cyan-400 text-base"></i>
+              <span>Complete Privacy</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- HERO RIGHT VISUAL DISPLAY CARD -->
+        <div class="lg:col-span-5">
+          <div class="relative">
+            
+            <!-- DECORATIVE BACKGLOW -->
+            <div class="absolute -inset-1 rounded-2xl bg-gradient-to-r from-blue-600 to-cyan-500 opacity-30 blur-xl"></div>
+            
+            <!-- MAIN HERO CARD -->
+            <div class="relative rounded-2xl bg-slate-900/90 border border-slate-700/80 p-6 shadow-2xl backdrop-blur-xl">
+              
+              <!-- CARD HEADER -->
+              <div class="flex justify-between items-center pb-4 border-b border-slate-800">
+                <div class="flex items-center gap-3">
+                  <img src="./assets/images/logo.jpg" alt="Coding2Projects" class="w-10 h-10 rounded-lg border border-blue-500/40 object-contain">
+                  <div>
+                    <h3 class="font-bold text-white text-sm">Coding2Projects</h3>
+                    <p class="text-xs text-sky-400">Complete Academic Solutions</p>
+                  </div>
+                </div>
+                <span class="px-2.5 py-1 rounded-md text-[11px] font-bold bg-blue-600/30 text-blue-300 border border-blue-500/30">
+                  BUILD YOUR FUTURE
+                </span>
+              </div>
+
+              <!-- TAGLINE BANNER -->
+              <div class="my-4 p-4 rounded-xl bg-gradient-to-r from-blue-950 via-slate-900 to-blue-900 border border-blue-500/20 text-center">
+                <p class="text-xs text-sky-300 font-semibold uppercase tracking-wider mb-1">Our Core Commitment</p>
+                <h4 class="text-lg font-bold text-white">"Build Your Project. Build Your Future."</h4>
+              </div>
+
+              <!-- CODE TERMINAL PREVIEW STYLED BOX -->
+              <div class="rounded-xl bg-slate-950 p-4 border border-slate-800 font-mono text-xs text-slate-300 space-y-2">
+                <div class="flex items-center justify-between text-slate-500 pb-2 border-b border-slate-800">
+                  <div class="flex gap-1.5">
+                    <span class="w-2.5 h-2.5 rounded-full bg-red-500"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-yellow-500"></span>
+                    <span class="w-2.5 h-2.5 rounded-full bg-green-500"></span>
+                  </div>
+                  <span class="text-[10px]">project_scope.config.json</span>
+                </div>
+                <p><span class="text-purple-400">const</span> <span class="text-blue-400">coding2projects</span> = {</p>
+                <p class="pl-4"><span class="text-sky-300">degrees</span>: [<span class="text-emerald-300">"BE/B.Tech"</span>, <span class="text-emerald-300">"M.E/M.Tech"</span>, <span class="text-emerald-300">"MCA"</span>],</p>
+                <p class="pl-4"><span class="text-sky-300">techDomains</span>: [<span class="text-amber-300">"Web"</span>, <span class="text-amber-300">"Mobile"</span>, <span class="text-amber-300">"AI/ML"</span>, <span class="text-amber-300">"IoT"</span>],</p>
+                <p class="pl-4"><span class="text-sky-300">deliverables</span>: [<span class="text-emerald-300">"Source Code"</span>, <span class="text-emerald-300">"Report"</span>, <span class="text-emerald-300">"PPT"</span>, <span class="text-emerald-300">"Viva Prep"</span>],</p>
+                <p class="pl-4"><span class="text-sky-300">qualityGuarantee</span>: <span class="text-emerald-400">true</span></p>
+                <p>};</p>
+              </div>
+
+              <!-- DIRECT CONTACT FLOATING FOOTER IN CARD -->
+              <div class="mt-4 pt-3 flex items-center justify-between text-xs text-slate-400">
+                <span class="flex items-center gap-1.5">
+                  <i class="fas fa-headset text-sky-400"></i> Direct Expert Assistance
+                </span>
+                <a href="https://wa.me/917397730585?text=Hi!%20I%20want%20to%20inquire%20about%20a%20project." target="_blank" class="text-emerald-400 font-bold hover:underline">
+                  Connect on WhatsApp &rarr;
+                </a>
+              </div>
+
+            </div>
+
+            <!-- FLOATING BADGE -->
+            <div class="hidden sm:flex absolute -bottom-6 -left-6 bg-slate-900/95 border border-emerald-500/40 p-3.5 rounded-xl shadow-2xl backdrop-blur-md items-center gap-3 animate-float">
+              <div class="w-10 h-10 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xl">
+                <i class="fas fa-user-check"></i>
+              </div>
+              <div>
+                <div class="text-xs font-extrabold text-white">1-on-1 Guidance</div>
+                <div class="text-[11px] text-slate-400">Code Explanation & Viva Prep</div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 PILLARS OF QUALITY (FROM BRAND POSTER) -->
+  <section id="pillars" class="py-16 bg-slate-900/60 border-y border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="px-3 py-1 rounded-full bg-blue-900/40 text-sky-400 text-xs font-bold uppercase tracking-wider">Our Brand Promise</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-3">Why Students Choose Coding2Projects</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">We provide complete end-to-end project solutions tailored to college guidelines.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- PILLAR 1 -->
+        <div class="glass-card p-6 rounded-2xl glass-card-hover relative group">
+          <div class="w-14 h-14 rounded-2xl bg-blue-600/20 border border-blue-500/40 text-blue-400 flex items-center justify-center text-2xl mb-4 group-hover:bg-blue-600 group-hover:text-white transition duration-300">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Innovative Ideas</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Latest IEEE & trending domain topics customized to your university curriculum and guide expectations.
+          </p>
+        </div>
+
+        <!-- PILLAR 2 -->
+        <div class="glass-card p-6 rounded-2xl glass-card-hover relative group">
+          <div class="w-14 h-14 rounded-2xl bg-cyan-600/20 border border-cyan-500/40 text-cyan-400 flex items-center justify-center text-2xl mb-4 group-hover:bg-cyan-600 group-hover:text-white transition duration-300">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Quality Development</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Clean code architecture, zero syntax bugs, modern frameworks, and robust database management.
+          </p>
+        </div>
+
+        <!-- PILLAR 3 -->
+        <div class="glass-card p-6 rounded-2xl glass-card-hover relative group">
+          <div class="w-14 h-14 rounded-2xl bg-emerald-600/20 border border-emerald-500/40 text-emerald-400 flex items-center justify-center text-2xl mb-4 group-hover:bg-emerald-600 group-hover:text-white transition duration-300">
+            <i class="fas fa-clipboard-check"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">On-Time Delivery</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Strict adherence to review deadlines. Receive your project modules well in advance of college reviews.
+          </p>
+        </div>
+
+        <!-- PILLAR 4 -->
+        <div class="glass-card p-6 rounded-2xl glass-card-hover relative group">
+          <div class="w-14 h-14 rounded-2xl bg-purple-600/20 border border-purple-500/40 text-purple-400 flex items-center justify-center text-2xl mb-4 group-hover:bg-purple-600 group-hover:text-white transition duration-300">
+            <i class="fas fa-headset"></i>
+          </div>
+          <h3 class="text-lg font-bold text-white mb-2">Support & Guidance</h3>
+          <p class="text-slate-400 text-sm leading-relaxed">
+            Remote system setup, detailed code walk-throughs, and mock Viva questions so you can present confidently.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- DEGREES SUPPORTED SECTION -->
+  <section id="degrees" class="py-16 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="px-3 py-1 rounded-full bg-blue-900/40 text-sky-400 text-xs font-bold uppercase tracking-wider">Academic Level</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-3">Projects For All Major Degree Courses</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">Whether you are in Pre-Final or Final Year, we have tailored solutions for your degree requirements.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- DEGREE 1 -->
+        <div class="rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-7 hover:border-blue-500/50 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-6">
+              <span class="w-12 h-12 rounded-xl bg-blue-600/20 text-blue-400 flex items-center justify-center text-2xl">
+                <i class="fas fa-graduation-cap"></i>
+              </span>
+              <span class="px-2.5 py-1 rounded text-xs font-bold bg-blue-950 text-blue-300 border border-blue-800">UG Degree</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">BE / B.Tech</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              Full-fledged final year project solutions for CSE, IT, ECE, EEE, Artificial Intelligence & Data Science branches.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> Mini & Major Projects</li>
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> Modern Web & Mobile Stacks</li>
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> IEEE Based System Architectures</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/917397730585?text=Hi!%20I'm%20a%20BE/B.Tech%20student%20looking%20for%20a%20final%20year%20project." target="_blank" 
+             class="w-full py-3 rounded-xl font-bold bg-slate-800 hover:bg-blue-600 text-slate-200 hover:text-white border border-slate-700 text-center text-xs transition">
+            Inquire BE / B.Tech Projects
+          </a>
+        </div>
+
+        <!-- DEGREE 2 -->
+        <div class="rounded-2xl bg-gradient-to-b from-blue-950/60 to-slate-950 border border-blue-500/40 p-7 shadow-xl shadow-blue-900/20 flex flex-col justify-between relative overflow-hidden">
+          <div class="absolute top-0 right-0 bg-blue-600 text-white text-[10px] font-extrabold px-3 py-1 rounded-bl-lg">
+            HIGH DEMAND
+          </div>
+          <div>
+            <div class="flex justify-between items-center mb-6">
+              <span class="w-12 h-12 rounded-xl bg-cyan-600/20 text-cyan-400 flex items-center justify-center text-2xl">
+                <i class="fas fa-award"></i>
+              </span>
+              <span class="px-2.5 py-1 rounded text-xs font-bold bg-cyan-950 text-cyan-300 border border-cyan-800">PG Degree</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">M.E / M.Tech</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              Advanced research-oriented implementations, deep learning models, complex cloud architectures, and algorithmic papers.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> High-Complexity ML / Deep Learning</li>
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> Novel Algorithm Enhancements</li>
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> Publication-Grade Documentation</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/917397730585?text=Hi!%20I'm%20an%20M.E/M.Tech%20student%20looking%20for%20an%20advanced%20project." target="_blank" 
+             class="w-full py-3 rounded-xl font-bold bg-blue-600 hover:bg-blue-500 text-white text-center text-xs transition shadow-lg shadow-blue-600/30">
+            Inquire M.E / M.Tech Projects
+          </a>
+        </div>
+
+        <!-- DEGREE 3 -->
+        <div class="rounded-2xl bg-gradient-to-b from-slate-900 to-slate-950 border border-slate-800 p-7 hover:border-blue-500/50 transition duration-300 flex flex-col justify-between">
+          <div>
+            <div class="flex justify-between items-center mb-6">
+              <span class="w-12 h-12 rounded-xl bg-purple-600/20 text-purple-400 flex items-center justify-center text-2xl">
+                <i class="fas fa-laptop-code"></i>
+              </span>
+              <span class="px-2.5 py-1 rounded text-xs font-bold bg-purple-950 text-purple-300 border border-purple-800">Master's</span>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-3">MCA</h3>
+            <p class="text-slate-400 text-sm mb-6 leading-relaxed">
+              Complete full-stack applications, enterprise cloud systems, database-driven portals, and cross-platform mobile apps.
+            </p>
+            <ul class="space-y-2.5 text-xs text-slate-300 mb-6">
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> Enterprise Full-Stack Web Portals</li>
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> Flutter / React Native Mobile Apps</li>
+              <li class="flex items-center gap-2"><i class="fas fa-check-circle text-emerald-400"></i> Complete ER-Diagrams & Schema Reports</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/917397730585?text=Hi!%20I'm%20an%20MCA%20student%20looking%20for%20a%20final%20year%20project." target="_blank" 
+             class="w-full py-3 rounded-xl font-bold bg-slate-800 hover:bg-blue-600 text-slate-200 hover:text-white border border-slate-700 text-center text-xs transition">
+            Inquire MCA Projects
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FILTERABLE DOMAINS & SHOWCASE -->
+  <section id="domains" class="py-16 bg-slate-950/80 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-10">
+        <span class="px-3 py-1 rounded-full bg-blue-900/40 text-sky-400 text-xs font-bold uppercase tracking-wider">Technology Stacks</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-3">Explore Project Domains</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">Select a technology domain below to filter top-rated academic project ideas.</p>
+      </div>
+
+      <!-- FILTER BUTTONS -->
+      <div class="flex flex-wrap justify-center gap-2.5 mb-10">
+        <button class="domain-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-blue-600 text-white shadow-lg shadow-blue-500/30 transition" data-filter="all">
+          All Domains
+        </button>
+        <button class="domain-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition" data-filter="web">
+          🌐 Web Development
+        </button>
+        <button class="domain-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition" data-filter="mobile">
+          📱 Mobile Apps
+        </button>
+        <button class="domain-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition" data-filter="aiml">
+          🤖 AI & ML / Data Science
+        </button>
+        <button class="domain-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition" data-filter="fullstack">
+          ⚡ Full Stack
+        </button>
+        <button class="domain-filter-btn px-4 py-2 rounded-xl text-xs font-bold bg-slate-800/80 text-slate-300 hover:bg-slate-700 transition" data-filter="iot">
+          🔌 Embedded & IoT
+        </button>
+      </div>
+
+      <!-- CARDS SHOWCASE GRID -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- PROJECT 1 -->
+        <div class="project-card flex flex-col justify-between rounded-2xl bg-slate-900 border border-slate-800 p-6 hover:border-blue-500/40 transition duration-300" data-category="aiml">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-bold bg-purple-950 text-purple-300 border border-purple-800">AI & ML</span>
+              <span class="text-xs font-semibold text-slate-400">BE / M.Tech</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">AI-Powered Diagnostic Medical Imaging & Tumor Classifier</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              Deep Convolutional Neural Network (CNN) model predicting abnormalities from MRI/X-Ray scans with high accuracy & interactive doctor dashboard.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">Python</span>
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">TensorFlow/PyTorch</span>
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">Flask/Streamlit</span>
+            </div>
+          </div>
+          <a href="https://wa.me/917397730585?text=Hi!%20I'm%20interested%20in%20the%20AI-Powered%20Diagnostic%20Medical%20Imaging%20project." target="_blank"
+             class="w-full py-2.5 rounded-xl font-bold bg-emerald-600/20 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/30 text-center text-xs transition flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp"></i> Inquire Project Details
+          </a>
+        </div>
+
+        <!-- PROJECT 2 -->
+        <div class="project-card flex flex-col justify-between rounded-2xl bg-slate-900 border border-slate-800 p-6 hover:border-blue-500/40 transition duration-300" data-category="iot">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-bold bg-amber-950 text-amber-300 border border-amber-800">Embedded Systems & IoT</span>
+              <span class="text-xs font-semibold text-slate-400">BE / B.Tech</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Smart Agricultural Soil & Irrigation Cloud Automation</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              ESP32 micro-controller integration with soil moisture, humidity, and temperature sensors reporting live telemetry to a cloud dashboard.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">ESP32 / Arduino</span>
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">MQTT / ThingsBoard</span>
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">Embedded C</span>
+            </div>
+          </div>
+          <a href="https://wa.me/917397730585?text=Hi!%20I'm%20interested%20in%20the%20Smart%20Agricultural%20IoT%20project." target="_blank"
+             class="w-full py-2.5 rounded-xl font-bold bg-emerald-600/20 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/30 text-center text-xs transition flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp"></i> Inquire Project Details
+          </a>
+        </div>
+
+        <!-- PROJECT 3 -->
+        <div class="project-card flex flex-col justify-between rounded-2xl bg-slate-900 border border-slate-800 p-6 hover:border-blue-500/40 transition duration-300" data-category="fullstack">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-bold bg-blue-950 text-blue-300 border border-blue-800">Full Stack</span>
+              <span class="text-xs font-semibold text-slate-400">MCA / BE</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">E-Learning Portal with Real-Time Code Execution Engine</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              Modern full-stack web application featuring student course management, interactive coding playground compiler, and automated grading.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">React.js</span>
+              <span class="px-2.5 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">Node.js</span>
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">MongoDB</span>
+            </div>
+          </div>
+          <a href="https://wa.me/917397730585?text=Hi!%20I'm%20interested%20in%20the%20Full%20Stack%20E-Learning%20Portal%20project." target="_blank"
+             class="w-full py-2.5 rounded-xl font-bold bg-emerald-600/20 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/30 text-center text-xs transition flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp"></i> Inquire Project Details
+          </a>
+        </div>
+
+        <!-- PROJECT 4 -->
+        <div class="project-card flex flex-col justify-between rounded-2xl bg-slate-900 border border-slate-800 p-6 hover:border-blue-500/40 transition duration-300" data-category="mobile">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-bold bg-emerald-950 text-emerald-300 border border-emerald-800">Mobile Apps</span>
+              <span class="text-xs font-semibold text-slate-400">MCA / BE</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Cross-Platform Health Tracker & Emergency Alert App</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              Flutter mobile application with live GPS location tracking, step counter, medication reminders, and 1-tap SOS alert notifications.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">Flutter / Dart</span>
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">Firebase</span>
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">REST API</span>
+            </div>
+          </div>
+          <a href="https://wa.me/917397730585?text=Hi!%20I'm%20interested%20in%20the%20Flutter%20Health%20Tracker%20App%20project." target="_blank"
+             class="w-full py-2.5 rounded-xl font-bold bg-emerald-600/20 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/30 text-center text-xs transition flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp"></i> Inquire Project Details
+          </a>
+        </div>
+
+        <!-- PROJECT 5 -->
+        <div class="project-card flex flex-col justify-between rounded-2xl bg-slate-900 border border-slate-800 p-6 hover:border-blue-500/40 transition duration-300" data-category="aiml">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-bold bg-purple-950 text-purple-300 border border-purple-800">AI & ML</span>
+              <span class="text-xs font-semibold text-slate-400">BE / M.Tech</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Real-Time Autonomous Traffic Monitoring with YOLOv8</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              Computer vision application detecting vehicle density, traffic congestion bottlenecks, and dynamically calculating signal green times.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">OpenCV</span>
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">YOLOv8</span>
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">Python Flask</span>
+            </div>
+          </div>
+          <a href="https://wa.me/917397730585?text=Hi!%20I'm%20interested%20in%20the%20Autonomous%20Traffic%20YOLOv8%20project." target="_blank"
+             class="w-full py-2.5 rounded-xl font-bold bg-emerald-600/20 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/30 text-center text-xs transition flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp"></i> Inquire Project Details
+          </a>
+        </div>
+
+        <!-- PROJECT 6 -->
+        <div class="project-card flex flex-col justify-between rounded-2xl bg-slate-900 border border-slate-800 p-6 hover:border-blue-500/40 transition duration-300" data-category="web">
+          <div>
+            <div class="flex justify-between items-start mb-3">
+              <span class="px-2.5 py-1 rounded-md text-[10px] font-bold bg-sky-950 text-sky-300 border border-sky-800">Web Development</span>
+              <span class="text-xs font-semibold text-slate-400">MCA / BE</span>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Automated Resume Parser & Candidate Screening Platform</h3>
+            <p class="text-slate-400 text-xs leading-relaxed mb-4">
+              NLP web application that parses PDF resumes, extracts key skills & experience, and ranks candidates against job descriptions automatically.
+            </p>
+            <div class="flex flex-wrap gap-1.5 mb-6">
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">Django / Python</span>
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">spaCy / NLTK</span>
+              <span class="px-2 py-0.5 rounded text-[10px] bg-slate-800 text-slate-300 font-mono">Bootstrap 5</span>
+            </div>
+          </div>
+          <a href="https://wa.me/917397730585?text=Hi!%20I'm%20interested%20in%20the%20Resume%20Parser%20%26%20Screening%20Platform%20project." target="_blank"
+             class="w-full py-2.5 rounded-xl font-bold bg-emerald-600/20 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/30 text-center text-xs transition flex items-center justify-center gap-2">
+            <i class="fab fa-whatsapp"></i> Inquire Project Details
+          </a>
+        </div>
+
+      </div>
+
+      <!-- CUSTOM TOPIC PROMPT BANNER -->
+      <div class="mt-12 p-6 rounded-2xl bg-gradient-to-r from-blue-900/60 via-slate-900 to-cyan-900/60 border border-blue-500/30 flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+        <div>
+          <h4 class="text-lg font-bold text-white">Have a Specific Project Idea from Your College Guide?</h4>
+          <p class="text-slate-300 text-xs sm:text-sm mt-1">We implement custom baseline paper architectures, IEEE titles, and custom project requirements!</p>
+        </div>
+        <a href="https://wa.me/917397730585?text=Hi%20Coding2Projects!%20I%20have%20a%20custom%20project%20topic%20from%20my%20college%20guide." target="_blank"
+           class="px-6 py-3 rounded-xl font-bold bg-blue-600 hover:bg-blue-500 text-white text-xs whitespace-nowrap shadow-lg shadow-blue-600/30 transition">
+          Send Your Custom Topic &rarr;
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- INTERACTIVE PROJECT PACKAGE & REQUIREMENT ESTIMATOR -->
+  <section id="calculator" class="py-16 relative">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-10">
+        <span class="px-3 py-1 rounded-full bg-blue-900/40 text-sky-400 text-xs font-bold uppercase tracking-wider">Instant Quote Tool</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-3">Interactive Project Estimator</h2>
+        <p class="text-slate-400 text-sm mt-2">Select your degree, domain, and required deliverables to generate an instant project plan & WhatsApp quote.</p>
+      </div>
+
+      <!-- CALCULATOR CONTAINER -->
+      <div class="rounded-3xl bg-slate-900/90 border border-blue-500/30 p-6 sm:p-10 shadow-2xl backdrop-blur-xl space-y-8">
+        
+        <!-- STEP 1: DEGREE & DOMAIN -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <div>
+            <label class="block text-xs font-bold uppercase text-sky-400 tracking-wider mb-2">1. Select Degree Course</label>
+            <select id="calc-degree" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 font-semibold">
+              <option value="BE / B.Tech">BE / B.Tech (Engineering)</option>
+              <option value="M.E / M.Tech">M.E / M.Tech (Master of Tech)</option>
+              <option value="MCA">MCA (Master of Computer Apps)</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold uppercase text-sky-400 tracking-wider mb-2">2. Select Project Domain</label>
+            <select id="calc-domain" class="w-full bg-slate-950 border border-slate-700 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-blue-500 font-semibold">
+              <option value="Web Development">Web Development (Full Stack / MERN)</option>
+              <option value="Mobile Apps">Mobile Apps (Flutter / React Native / Android)</option>
+              <option value="ai-ml">AI & ML / Data Science</option>
+              <option value="Full Stack Development">Full Stack Enterprise</option>
+              <option value="iot">Embedded Systems & IoT</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- STEP 2: DELIVERABLES CHECKBOXES -->
+        <div>
+          <label class="block text-xs font-bold uppercase text-sky-400 tracking-wider mb-3">3. Select Required Package Deliverables</label>
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            
+            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer hover:border-blue-500/50 transition">
+              <input type="checkbox" value="100% Executable Source Code" checked class="calc-deliverable w-4 h-4 text-blue-600 rounded bg-slate-900 border-slate-700 focus:ring-0">
+              <span class="text-xs font-semibold text-slate-200">100% Executable Source Code</span>
+            </label>
+
+            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer hover:border-blue-500/50 transition">
+              <input type="checkbox" value="Full Project Report (.docx & .pdf)" checked class="calc-deliverable w-4 h-4 text-blue-600 rounded bg-slate-900 border-slate-700 focus:ring-0">
+              <span class="text-xs font-semibold text-slate-200">Complete Project Documentation & Report</span>
+            </label>
+
+            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer hover:border-blue-500/50 transition">
+              <input type="checkbox" value="Review PPT Presentation" checked class="calc-deliverable w-4 h-4 text-blue-600 rounded bg-slate-900 border-slate-700 focus:ring-0">
+              <span class="text-xs font-semibold text-slate-200">PowerPoint PPT for College Reviews</span>
+            </label>
+
+            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer hover:border-blue-500/50 transition">
+              <input type="checkbox" value="Viva Questions & Answers Guide" checked class="calc-deliverable w-4 h-4 text-blue-600 rounded bg-slate-900 border-slate-700 focus:ring-0">
+              <span class="text-xs font-semibold text-slate-200">Viva Examination Q&A Guidance</span>
+            </label>
+
+            <label class="flex items-center gap-3 p-3.5 rounded-xl bg-slate-950 border border-slate-800 cursor-pointer hover:border-blue-500/50 transition sm:col-span-2">
+              <input type="checkbox" value="Remote Laptop Setup & Demo Video" checked class="calc-deliverable w-4 h-4 text-blue-600 rounded bg-slate-900 border-slate-700 focus:ring-0">
+              <span class="text-xs font-semibold text-slate-200">Remote AnyDesk System Installation & Live Execution Support</span>
+            </label>
+
+          </div>
+        </div>
+
+        <!-- ESTIMATED OUTPUT BOX -->
+        <div class="p-6 rounded-2xl bg-gradient-to-r from-blue-950 via-slate-900 to-blue-950 border border-blue-500/40 flex flex-col sm:flex-row justify-between items-center gap-4">
+          <div>
+            <div class="text-xs text-sky-400 font-semibold uppercase tracking-wider">Estimated Delivery Window</div>
+            <div id="est-timeline" class="text-2xl font-black text-white mt-0.5">3 - 5 Days</div>
+            <div id="est-deliverables-count" class="text-xs text-slate-400 mt-1">5 Deliverables Included</div>
+          </div>
+          <a id="calc-whatsapp-btn" href="#" target="_blank" 
+             class="w-full sm:w-auto px-7 py-3.5 rounded-xl font-bold bg-emerald-600 hover:bg-emerald-500 text-white text-sm flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/30 transition">
+            <i class="fab fa-whatsapp text-lg"></i>
+            <span>Get Final Quote on WhatsApp</span>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS (5-STEP PROCESS) -->
+  <section class="py-16 bg-slate-900/40 border-y border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-12">
+        <span class="px-3 py-1 rounded-full bg-blue-900/40 text-sky-400 text-xs font-bold uppercase tracking-wider">Simple Workflow</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-3">How We Build Your Project</h2>
+        <p class="text-slate-400 text-sm sm:text-base mt-2">5 hassle-free steps from topic discussion to final viva success.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-5 gap-4 relative">
+        
+        <!-- STEP 1 -->
+        <div class="rounded-xl bg-slate-900 border border-slate-800 p-5 relative text-center">
+          <div class="w-9 h-9 rounded-full bg-blue-600 text-white font-extrabold flex items-center justify-center text-sm mx-auto mb-3">1</div>
+          <h4 class="font-bold text-white text-sm mb-1">Requirement & Domain</h4>
+          <p class="text-slate-400 text-xs">Share your degree, branch, and preferred tech domain with us.</p>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="rounded-xl bg-slate-900 border border-slate-800 p-5 relative text-center">
+          <div class="w-9 h-9 rounded-full bg-blue-600 text-white font-extrabold flex items-center justify-center text-sm mx-auto mb-3">2</div>
+          <h4 class="font-bold text-white text-sm mb-1">Topic Selection</h4>
+          <p class="text-slate-400 text-xs">Choose from curated IEEE titles or get abstract approval from your guide.</p>
+        </div>
+
+        <!-- STEP 3 -->
+        <div class="rounded-xl bg-slate-900 border border-slate-800 p-5 relative text-center">
+          <div class="w-9 h-9 rounded-full bg-blue-600 text-white font-extrabold flex items-center justify-center text-sm mx-auto mb-3">3</div>
+          <h4 class="font-bold text-white text-sm mb-1">Development</h4>
+          <p class="text-slate-400 text-xs">We build clean source code & prepare documentation for reviews.</p>
+        </div>
+
+        <!-- STEP 4 -->
+        <div class="rounded-xl bg-slate-900 border border-slate-800 p-5 relative text-center">
+          <div class="w-9 h-9 rounded-full bg-blue-600 text-white font-extrabold flex items-center justify-center text-sm mx-auto mb-3">4</div>
+          <h4 class="font-bold text-white text-sm mb-1">Live Demo</h4>
+          <p class="text-slate-400 text-xs">Watch a live video demo or remote AnyDesk execution on your laptop.</p>
+        </div>
+
+        <!-- STEP 5 -->
+        <div class="rounded-xl bg-slate-900 border border-slate-800 p-5 relative text-center">
+          <div class="w-9 h-9 rounded-full bg-emerald-600 text-white font-extrabold flex items-center justify-center text-sm mx-auto mb-3">5</div>
+          <h4 class="font-bold text-white text-sm mb-1">Delivery & Viva Prep</h4>
+          <p class="text-slate-400 text-xs">Receive complete files, PPT, and 1-on-1 viva question guidance.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- BRAND POSTER SPOTLIGHT SECTION -->
+  <section id="poster" class="py-16 relative">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl bg-slate-900 border border-slate-800 p-6 sm:p-10 grid md:grid-cols-12 gap-8 items-center">
+        
+        <div class="md:col-span-6 space-y-4">
+          <span class="px-3 py-1 rounded-full bg-blue-900/50 text-sky-400 text-xs font-bold uppercase">Official Poster & Branding</span>
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white">Coding2Projects Brand Poster</h2>
+          <p class="text-slate-300 text-sm leading-relaxed">
+            Our official announcement banner outlining complete project solutions for <strong>Engineering (BE/B.Tech), MCA, M.Tech & M.E students</strong>.
+          </p>
+
+          <div class="space-y-2 text-xs text-slate-300">
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check text-emerald-400"></i>
+              <span>Technology Made Simple — High Quality & Original Code</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check text-emerald-400"></i>
+              <span>Complete Coverage: Web, Mobile, AI/ML, Full Stack & IoT</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <i class="fas fa-check text-emerald-400"></i>
+              <span>Direct Phone & WhatsApp Support: <strong>7397730585</strong></span>
+            </div>
+          </div>
+
+          <div class="pt-2 flex gap-3">
+            <a href="./assets/images/poster.jpg" target="_blank" class="px-5 py-2.5 rounded-xl font-bold bg-blue-600 hover:bg-blue-500 text-white text-xs flex items-center gap-2">
+              <i class="fas fa-expand"></i> View Full Poster Image
+            </a>
+          </div>
+        </div>
+
+        <div class="md:col-span-6 flex justify-center">
+          <div class="relative max-w-sm rounded-2xl overflow-hidden border-2 border-blue-500/40 shadow-2xl group">
+            <img src="./assets/images/poster.jpg" alt="Coding2Projects Brand Poster" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-500">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-4">
+              <span class="text-xs font-bold text-white">Coding2Projects — Technology Made Simple</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ ACCORDION -->
+  <section id="faq" class="py-16 bg-slate-950/70 border-t border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-10">
+        <span class="px-3 py-1 rounded-full bg-blue-900/40 text-sky-400 text-xs font-bold uppercase tracking-wider">Help & Clarity</span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-3">Frequently Asked Questions</h2>
+        <p class="text-slate-400 text-sm mt-2">Got questions about your academic project? We have answers.</p>
+      </div>
+
+      <div class="space-y-4">
+        
+        <!-- FAQ 1 -->
+        <div class="rounded-xl bg-slate-900 border border-slate-800 overflow-hidden">
+          <button class="faq-toggle w-full p-5 text-left font-bold text-slate-100 flex justify-between items-center hover:text-sky-400 transition text-sm sm:text-base">
+            <span>1. Will you assist in running the project code on my laptop?</span>
+            <i class="fas fa-chevron-down faq-icon text-slate-500 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-3">
+            Yes, absolutely! We connect remotely via AnyDesk or TeamViewer to install all software prerequisites (Python, Node.js, Android Studio, MySQL, etc.) and execute the project live on your laptop.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="rounded-xl bg-slate-900 border border-slate-800 overflow-hidden">
+          <button class="faq-toggle w-full p-5 text-left font-bold text-slate-100 flex justify-between items-center hover:text-sky-400 transition text-sm sm:text-base">
+            <span>2. Are the project reports plagiarism-free?</span>
+            <i class="fas fa-chevron-down faq-icon text-slate-500 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-3">
+            Yes! All project reports, synopses, and documentation are custom-formatted following standard university guidelines (IEEE / Anna University / VTU / JNTU format) and verified plagiarism-free.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="rounded-xl bg-slate-900 border border-slate-800 overflow-hidden">
+          <button class="faq-toggle w-full p-5 text-left font-bold text-slate-100 flex justify-between items-center hover:text-sky-400 transition text-sm sm:text-base">
+            <span>3. What if my college guide suggests modifications in the project?</span>
+            <i class="fas fa-chevron-down faq-icon text-slate-500 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-3">
+            We provide revision support to accommodate guide suggestions or module adjustments during your project review phases.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="rounded-xl bg-slate-900 border border-slate-800 overflow-hidden">
+          <button class="faq-toggle w-full p-5 text-left font-bold text-slate-100 flex justify-between items-center hover:text-sky-400 transition text-sm sm:text-base">
+            <span>4. Do you provide guidance for Viva Voice examination?</span>
+            <i class="fas fa-chevron-down faq-icon text-slate-500 transition-transform"></i>
+          </button>
+          <div class="faq-content hidden px-5 pb-5 text-xs sm:text-sm text-slate-400 leading-relaxed border-t border-slate-800/60 pt-3">
+            Yes! We provide line-by-line code explanation notes, system architecture flowcharts, and top expected Viva questions so you can answer external examiners with 100% confidence.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA BANNER & CONTACT -->
+  <section id="contact" class="py-16 relative">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="rounded-3xl bg-gradient-to-r from-blue-950 via-slate-900 to-blue-950 border border-blue-500/40 p-8 sm:p-12 text-center relative overflow-hidden shadow-2xl">
+        <div class="absolute -right-10 -bottom-10 w-60 h-60 bg-blue-500/10 rounded-full blur-3xl pointer-events-none"></div>
+
+        <h2 class="text-3xl sm:text-5xl font-black text-white mb-4">Let’s build something amazing together! 🚀</h2>
+        <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto mb-8">
+          Get in touch with Coding2Projects today. Talk directly to our technical experts for topic selection & project assistance.
+        </p>
+
+        <div class="flex flex-col sm:flex-row justify-center items-center gap-4 mb-8">
+          <a href="https://wa.me/917397730585?text=Hi%20Coding2Projects!%20I'm%20ready%20to%20start%20my%20final%20year%20project." target="_blank"
+             class="w-full sm:w-auto px-8 py-4 rounded-xl font-extrabold bg-emerald-600 hover:bg-emerald-500 text-white text-lg flex items-center justify-center gap-3 shadow-xl shadow-emerald-600/40 transition transform hover:-translate-y-0.5">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            <span>WhatsApp / Call: 7397730585</span>
+          </a>
+
+          <a href="mailto:code2projects100@gmail.com"
+             class="w-full sm:w-auto px-7 py-4 rounded-xl font-bold bg-slate-800 hover:bg-slate-700 text-slate-200 border border-slate-700 text-base flex items-center justify-center gap-2.5 transition">
+            <i class="far fa-envelope text-sky-400"></i>
+            <span>code2projects100@gmail.com</span>
+          </a>
+        </div>
+
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-950/80 border border-slate-800 text-xs font-semibold text-slate-400">
+          <i class="fab fa-instagram text-pink-400 text-sm"></i>
+          <span>Follow our Instagram:</span>
+          <a href="https://www.instagram.com/coding2projects?utm_source=qr&igsi=MXczMTlpaTlndG1jOA==" target="_blank" class="text-sky-400 hover:underline">@coding2projects</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-800/80 py-10 text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
+      
+      <div class="flex items-center gap-3">
+        <img src="./assets/images/logo.jpg" alt="Logo" class="w-8 h-8 rounded-md border border-blue-500/30 object-contain">
+        <div>
+          <span class="font-bold text-slate-200">Coding2Projects</span> — <span class="text-sky-400">Technology made simple</span>
+        </div>
+      </div>
+
+      <div class="flex gap-6 font-semibold text-slate-400">
+        <a href="#home" class="hover:text-white transition">Home</a>
+        <a href="#degrees" class="hover:text-white transition">Degrees</a>
+        <a href="#domains" class="hover:text-white transition">Domains</a>
+        <a href="#calculator" class="hover:text-white transition">Estimator</a>
+        <a href="#faq" class="hover:text-white transition">FAQ</a>
+      </div>
+
+      <div>
+        &copy; 2026 Coding2Projects. All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- FLOATING WHATSAPP BUTTON WITH PULSING WAVE EFFECT -->
+  <div class="fixed bottom-6 right-6 z-50 flex items-center gap-3">
+    <div class="hidden md:block px-3 py-1.5 rounded-xl bg-slate-900 border border-slate-700 text-xs text-white shadow-xl font-semibold">
+      Chat with Project Expert 💬
+    </div>
+    <a href="https://wa.me/917397730585?text=Hi%20Coding2Projects!%20I'm%20interested%20in%20a%20project." target="_blank" aria-label="Chat on WhatsApp" 
+       class="w-14 h-14 rounded-full bg-emerald-500 text-white flex items-center justify-center text-3xl shadow-2xl shadow-emerald-500/50 hover:bg-emerald-400 transition pulse-whatsapp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+  </div>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
